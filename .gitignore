@@ -1,0 +1,23 @@
+# 1. 模型权重与检查点（绝对物理隔离，严禁上传！）
+*.safetensors
+*.bin
+*.pt
+*.pth
+checkpoint-*/
+qwen_lora_test/
+models/
+
+# 2. 庞大的脏数据（只允许上传几十行的 sample_dataset.jsonl 样例）
+*.json
+*.csv
+!sample_dataset.jsonl
+
+# 3. Python 运行时垃圾与缓存
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# 4. 系统垃圾与机密配置
+.DS_Store
+.env
